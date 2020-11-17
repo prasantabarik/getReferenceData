@@ -7,7 +7,6 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection="delivery-schedule")
 data class DeliveryScheduleModel(
         var id: String? = null,
-        var deliveryScheduleId: Long?,
         var storeNumber: Long?,
         var deliveryStreamNumber: Int?,
         var deliveryStreamName: String?,

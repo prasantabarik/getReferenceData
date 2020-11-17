@@ -230,3 +230,173 @@
 [INFO ] 2020-11-16 13:29:09.603 [http-nio-8093-exec-1] Controller - Get by query in del stream
 [INFO ] 2020-11-16 13:44:50.844 [http-nio-8093-exec-3] Controller - Get by query in del stream
 [INFO ] 2020-11-16 13:53:22.231 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 10:54:46.312 [main] ServiceKotlinTemplateApplicationKt - Starting ServiceKotlinTemplateApplicationKt on DESKTOP-ATSEQH3 with PID 7380 (E:\GetReferenceData\target\classes started by kprab in E:\GetReferenceData)
+[INFO ] 2020-11-17 10:54:46.504 [main] ServiceKotlinTemplateApplicationKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-17 10:55:05.835 [main] ServiceKotlinTemplateApplicationKt - Started ServiceKotlinTemplateApplicationKt in 21.901 seconds (JVM running for 26.922)
+[INFO ] 2020-11-17 11:10:58.694 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:11:03.138 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 11:11:35.787 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:11:36.058 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 11:12:36.563 [main] ServiceKotlinTemplateApplicationKt - Starting ServiceKotlinTemplateApplicationKt on DESKTOP-ATSEQH3 with PID 1428 (E:\GetReferenceData\target\classes started by kprab in E:\GetReferenceData)
+[INFO ] 2020-11-17 11:12:36.624 [main] ServiceKotlinTemplateApplicationKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-17 11:12:45.811 [main] ServiceKotlinTemplateApplicationKt - Started ServiceKotlinTemplateApplicationKt in 10.17 seconds (JVM running for 15.324)
+[INFO ] 2020-11-17 11:14:42.100 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:14:44.948 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 11:20:49.475 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:20:51.701 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 11:22:47.073 [http-nio-8093-exec-7] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:22:47.369 [http-nio-8093-exec-8] Controller - Get All
+[INFO ] 2020-11-17 11:25:19.779 [http-nio-8093-exec-10] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:25:21.888 [http-nio-8093-exec-1] Controller - Get All
+[INFO ] 2020-11-17 11:27:21.544 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:27:22.048 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 11:30:57.236 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:30:59.309 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 11:35:06.265 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:35:08.383 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 11:39:28.428 [http-nio-8093-exec-2] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:39:30.624 [http-nio-8093-exec-3] Controller - Get All
+[INFO ] 2020-11-17 11:42:28.980 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:42:30.856 [http-nio-8093-exec-6] Controller - Get All
+[INFO ] 2020-11-17 11:43:48.045 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:43:48.393 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 11:45:42.945 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:45:43.220 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 11:47:29.781 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:47:30.128 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 11:50:40.996 [http-nio-8093-exec-7] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:50:42.902 [http-nio-8093-exec-8] Controller - Get All
+[INFO ] 2020-11-17 11:52:37.371 [http-nio-8093-exec-10] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:52:38.080 [http-nio-8093-exec-1] Controller - Get All
+[INFO ] 2020-11-17 11:54:27.467 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:54:27.778 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 11:55:00.162 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 11:55:00.417 [http-nio-8093-exec-6] Controller - Get All
+[INFO ] 2020-11-17 12:29:00.426 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:29:02.839 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 12:31:55.047 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:31:57.730 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 12:35:27.094 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:35:29.623 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 12:35:29.900 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:35:30.138 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 12:37:06.933 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:37:07.266 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 12:37:07.551 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:37:07.805 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 12:38:31.732 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:38:32.031 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 12:38:32.273 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:38:32.523 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 12:41:38.171 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:41:40.275 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 12:41:40.534 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:41:40.774 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 12:43:04.150 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:43:04.515 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 12:43:04.756 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:43:04.989 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 12:47:00.585 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:47:02.698 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 12:47:03.000 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:47:03.262 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 12:50:15.973 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:50:18.093 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 12:50:18.361 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:50:18.612 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 12:53:43.246 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:53:45.940 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 12:53:46.345 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:53:46.601 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 12:57:28.173 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:57:30.465 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 12:57:30.759 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:57:31.158 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 12:58:44.035 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:58:44.390 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 12:58:44.665 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 12:58:44.928 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 13:02:23.079 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:02:25.305 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 13:02:25.694 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:02:26.102 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 13:04:19.879 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:04:20.221 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 13:04:20.513 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:04:20.772 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 13:06:25.923 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:06:29.264 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 13:06:29.686 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:06:30.014 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 13:12:42.872 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:12:45.260 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 13:16:22.542 [http-nio-8093-exec-2] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:16:24.977 [http-nio-8093-exec-3] Controller - Get All
+[INFO ] 2020-11-17 13:20:33.471 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:20:36.677 [http-nio-8093-exec-6] Controller - Get All
+[INFO ] 2020-11-17 13:21:54.751 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:21:55.071 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 13:22:38.721 [http-nio-8093-exec-10] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:22:39.550 [http-nio-8093-exec-1] Controller - Get All
+[INFO ] 2020-11-17 13:22:39.931 [http-nio-8093-exec-2] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:22:40.146 [http-nio-8093-exec-3] Controller - Get All
+[INFO ] 2020-11-17 13:27:01.825 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 13:27:06.575 [http-nio-8093-exec-6] Controller - Get All
+[INFO ] 2020-11-17 14:07:43.902 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:07:46.091 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 14:07:46.339 [http-nio-8093-exec-10] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:07:46.643 [http-nio-8093-exec-1] Controller - Get All
+[INFO ] 2020-11-17 14:08:54.937 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:08:55.311 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 14:14:03.157 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:14:05.881 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 14:14:06.465 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:14:06.800 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 14:20:02.582 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:20:05.447 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 14:21:43.064 [http-nio-8093-exec-4] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:21:43.359 [http-nio-8093-exec-5] Controller - Get All
+[INFO ] 2020-11-17 14:21:49.468 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:21:50.073 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 14:21:53.799 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 14:21:54.110 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 15:19:59.569 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:20:04.524 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 15:20:04.874 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:20:05.245 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 15:22:57.777 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:23:01.546 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 15:24:01.272 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:24:17.866 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 15:24:20.658 [http-nio-8093-exec-10] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:24:23.187 [http-nio-8093-exec-1] Controller - Get All
+[INFO ] 2020-11-17 15:26:00.924 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:26:01.322 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 15:26:01.746 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:26:01.979 [http-nio-8093-exec-6] Controller - Get All
+[INFO ] 2020-11-17 15:27:57.496 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:27:57.828 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 15:28:06.648 [http-nio-8093-exec-10] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:28:06.997 [http-nio-8093-exec-1] Controller - Get All
+[INFO ] 2020-11-17 15:28:07.325 [http-nio-8093-exec-2] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:28:07.566 [http-nio-8093-exec-3] Controller - Get All
+[INFO ] 2020-11-17 15:41:09.177 [http-nio-8093-exec-5] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:41:12.145 [http-nio-8093-exec-6] Controller - Get All
+[INFO ] 2020-11-17 15:41:12.543 [http-nio-8093-exec-7] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:41:12.814 [http-nio-8093-exec-8] Controller - Get All
+[INFO ] 2020-11-17 15:41:34.316 [http-nio-8093-exec-9] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:41:34.967 [http-nio-8093-exec-10] Controller - Get All
+[INFO ] 2020-11-17 15:43:30.564 [main] ServiceKotlinTemplateApplicationKt - Starting ServiceKotlinTemplateApplicationKt on DESKTOP-ATSEQH3 with PID 17436 (E:\GetReferenceData\target\classes started by kprab in E:\GetReferenceData)
+[INFO ] 2020-11-17 15:43:30.598 [main] ServiceKotlinTemplateApplicationKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-17 15:43:40.920 [main] ServiceKotlinTemplateApplicationKt - Started ServiceKotlinTemplateApplicationKt in 11.717 seconds (JVM running for 17.528)
+[INFO ] 2020-11-17 15:43:50.839 [http-nio-8093-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:43:53.990 [http-nio-8093-exec-2] Controller - Get All
+[INFO ] 2020-11-17 15:43:54.935 [http-nio-8093-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-17 15:43:55.227 [http-nio-8093-exec-4] Controller - Get All
+[INFO ] 2020-11-17 16:01:24.451 [http-nio-8093-exec-6] Controller - Get by query in del stream
+[INFO ] 2020-11-17 16:01:26.566 [http-nio-8093-exec-7] Controller - Get All
+[INFO ] 2020-11-17 16:01:26.890 [http-nio-8093-exec-8] Controller - Get by query in del stream
+[INFO ] 2020-11-17 16:01:27.144 [http-nio-8093-exec-9] Controller - Get All
+[INFO ] 2020-11-17 17:21:21.360 [main] ServiceKotlinTemplateApplicationKt - Starting ServiceKotlinTemplateApplicationKt on DESKTOP-ATSEQH3 with PID 976 (E:\GetReferenceData\target\classes started by kprab in E:\GetReferenceData)
+[INFO ] 2020-11-17 17:21:22.047 [main] ServiceKotlinTemplateApplicationKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-17 17:21:52.672 [main] ServiceKotlinTemplateApplicationKt - Started ServiceKotlinTemplateApplicationKt in 32.9 seconds (JVM running for 47.134)
