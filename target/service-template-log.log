@@ -400,3 +400,10 @@
 [INFO ] 2020-11-17 17:21:21.360 [main] ServiceKotlinTemplateApplicationKt - Starting ServiceKotlinTemplateApplicationKt on DESKTOP-ATSEQH3 with PID 976 (E:\GetReferenceData\target\classes started by kprab in E:\GetReferenceData)
 [INFO ] 2020-11-17 17:21:22.047 [main] ServiceKotlinTemplateApplicationKt - No active profile set, falling back to default profiles: default
 [INFO ] 2020-11-17 17:21:52.672 [main] ServiceKotlinTemplateApplicationKt - Started ServiceKotlinTemplateApplicationKt in 32.9 seconds (JVM running for 47.134)
+[INFO ] 2020-11-18 20:38:59.797 [main] ServiceKotlinTemplateApplicationKt - Starting ServiceKotlinTemplateApplicationKt on DESKTOP-ATSEQH3 with PID 7544 (F:\getReferenceData\target\classes started by kprab in F:\getReferenceData)
+[INFO ] 2020-11-18 20:38:59.872 [main] ServiceKotlinTemplateApplicationKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-18 20:39:14.789 [main] ServiceKotlinTemplateApplicationKt - Started ServiceKotlinTemplateApplicationKt in 15.824 seconds (JVM running for 24.901)
+[INFO ] 2020-11-18 20:39:35.337 [http-nio-8091-exec-1] Controller - Get by query in del stream
+[INFO ] 2020-11-18 20:39:43.173 [http-nio-8091-exec-2] Controller - Get All
+[INFO ] 2020-11-18 20:39:45.209 [http-nio-8091-exec-3] Controller - Get by query in del stream
+[INFO ] 2020-11-18 20:39:45.494 [http-nio-8091-exec-5] Controller - Get All
