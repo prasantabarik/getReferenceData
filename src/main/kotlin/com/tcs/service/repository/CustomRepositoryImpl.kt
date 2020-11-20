@@ -16,6 +16,8 @@ class CustomRepositoryImpl(private val mongoTemplate: MongoTemplate) : CustomRep
         BaseModel::class.java)
     }
 
+
+
 fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String)
         : MutableList<DeliveryScheduleModel> {
         var query = Query()
@@ -34,22 +36,13 @@ fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:St
     criteria.andOperator(
             Criteria.where("storeNumber").isEqualTo(storeNumber),
             Criteria.where("deliveryStreamNumber").isEqualTo(deliveryStream)
-            , Criteria.where("StartDate").lte(endDate),
-              Criteria.where("endDate").gte(startDate)
+            , Criteria.where("startDate").lte(endDate).orOperator(
+              Criteria.where("endDate").gte(startDate),
+                Criteria.where("endDate").`is`(null))
 
 
 
     )
-
-
-
-
-
-
-
-
-
-
 
         var toPrint = query.addCriteria(criteria);
         println(toPrint)
@@ -61,12 +54,35 @@ fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:St
     }
 
 
+//del schedule for moment
+    fun getDeliveryScheduleForMomentCustom(storeNumber:Long?,deliveryStream:Int?,startDate:String)
+        :MutableList<DeliveryScheduleModel> {
+    var query = Query()
+
+    var criteria = Criteria()
+
+    criteria.andOperator(
+            Criteria.where("storeNumber").isEqualTo(storeNumber),
+            Criteria.where("deliveryStreamNumber").isEqualTo(deliveryStream)
+            , Criteria.where("startDate").lte(startDate).orOperator(
+            Criteria.where("endDate").gte(startDate)
+            ,Criteria.where("endDate").`is`(null)
+    )
+    )
+
+    var toPrint = query.addCriteria(criteria);
+
+println(toPrint)
+
+    return mongoTemplate.find(toPrint,
+            DeliveryScheduleModel::class.java)
+
+}
 
 
 
 
-
-fun getDeliveryChannel(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String): MutableList<DeliveryChannel> {
+fun getDeliveryChannel(storeNumber:Long?,deliveryStream:Int?,startDate:String): MutableList<DeliveryChannel> {
     var query = Query()
 //    var criteria = startDate?.let {
 //        Criteria.where("storeNumber").isEqualTo(storeNumber).and("deliveryStream").isEqualTo(deliveryStream).and("startDate").and("endDate").lte(endDate)
@@ -75,7 +91,7 @@ fun getDeliveryChannel(storeNumber:Long?,deliveryStream:Int?,startDate:String,en
     var criteria = Criteria()
     criteria.andOperator(
             Criteria.where("storeNumber").isEqualTo(storeNumber),
-            Criteria.where("deliveryStreamNumber").isEqualTo(deliveryStream),
+            Criteria.where("deliveryStream").isEqualTo(deliveryStream),
             Criteria.where("startDate").lte(startDate).orOperator(
                     Criteria.where("endDate").gte(startDate)
                     ,Criteria.where("endDate").`is`(null)
@@ -98,22 +114,35 @@ fun getDeliveryChannel(storeNumber:Long?,deliveryStream:Int?,startDate:String,en
             }
 
     // for logistic one
-    fun getLogisticChannelRepo(storeNumber: Long?,deliveryStream:Int?,startDate:String,endDate:String):
+    fun getLogisticChannelRepo(storeNumber: Long?,deliveryStream:Int?,startDate:String):
             MutableList<LogisticChannel> {
         var query = Query()
 
         var criteria = Criteria()
+        var criteria1 = Criteria.where("endDate").gte(startDate)
+                .orOperator(Criteria.where("endDate").`is`(null))
+
         criteria.andOperator(
                 Criteria.where("storeNumber").isEqualTo(storeNumber),
                 Criteria.where("deliveryStream").isEqualTo(deliveryStream),
-                Criteria.where("startDate").lte(startDate).orOperator(
-                        Criteria.where("endDate").gte(endDate),
-                        Criteria.where("endDate").`is`(null)
-                )
+                Criteria.where("startDate").lte(startDate)
+                //,criteria1
+                        .orOperator(
+                        Criteria.where("endDate").gte(startDate),
+                        Criteria.where("endDate").`is`(null) )
+
         )
 
+
         var toPrint = query.addCriteria(criteria);
+        println("check in logistic")
+        println(toPrint)
         return mongoTemplate.find(toPrint,
                 LogisticChannel::class.java)
     }
+
+
+
+
+
 }

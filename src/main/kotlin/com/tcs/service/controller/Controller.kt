@@ -73,6 +73,25 @@ class Controller(private val service: Service,
         return ResponseEntity.ok(ServiceResponse("200",
                 "SUCCESS", records))
     }
+    /// Get deliverer All
+    @Operation(summary = OPENAPI_GET_DEF, description = OPENAPI_GET_DEF, tags = [API_TAG_NAME])
+    @ApiResponses(value = [
+        ApiResponse(responseCode = "200", description = DATA_FOUND, content = [
+            (Content(mediaType = MEDIA_TYPE, array = (
+                    ArraySchema(schema = Schema(implementation = BaseModel::class)))))]),
+        ApiResponse(responseCode = "400", description = BAD_REQUEST, content = [Content()]),
+        ApiResponse(responseCode = "404", description = NO_DATA_FOUND, content = [Content()])]
+    )
+    @RequestMapping(value = ["/delivererall"], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
+    fun getdelivererall(): ResponseEntity<ServiceResponse> {
+        logger.info("Get by query")
+        var records = mutableListOf<Deliverer>()
+        records =  service.getDelivererAllService()
+        return ResponseEntity.ok(ServiceResponse("200",
+                "SUCCESS", records))
+    }
+    //////////
+    //del schedule all
     @Operation(summary = OPENAPI_GET_DEF, description = OPENAPI_GET_DEF, tags = [API_TAG_NAME])
     @ApiResponses(value = [
         ApiResponse(responseCode = "200", description = DATA_FOUND, content = [
@@ -101,11 +120,10 @@ class Controller(private val service: Service,
     @RequestMapping(value = ["/deliveryChannel"], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
     fun get(@RequestParam (required = false) storeNumber:Long?,
             @RequestParam(required = false) deliveryStream:Int?,
-            @RequestParam(required = false) startDate:String,
-            @RequestParam(required = false) endDate:String): ResponseEntity<ServiceResponse> {
+            @RequestParam(required = false) startDate:String): ResponseEntity<ServiceResponse> {
         logger.info("Get by query")
         var records = mutableListOf<DeliveryChannel>()
-       records =  service.getDeliveryChannelService(storeNumber,deliveryStream,startDate,endDate)
+       records =  service.getDeliveryChannelService(storeNumber,deliveryStream,startDate)
         return ResponseEntity.ok(ServiceResponse("200",
                 "SUCCESS", records))
     }
@@ -127,6 +145,8 @@ class Controller(private val service: Service,
         return ResponseEntity.ok(ServiceResponse("200",
                 "SUCCESS", records))
     }
+
+    //del schedule sorted
     @Operation(summary = OPENAPI_GET_DEF, description = OPENAPI_GET_DEF, tags = [API_TAG_NAME])
     @ApiResponses(value = [
         ApiResponse(responseCode = "200", description = DATA_FOUND, content = [
@@ -140,12 +160,33 @@ class Controller(private val service: Service,
                              @RequestParam(required = false) deliveryStream:Int?,
                              @RequestParam(required = false) startDate:String,
                              @RequestParam(required = false) endDate:String): ResponseEntity<ServiceResponse> {
-        logger.info("Get All")
+        logger.info("Get from del schedule")
         var records = mutableListOf<Any>()
         records = service.getDeliveryScheduleSorted(storeNumber,deliveryStream,startDate,endDate).toMutableList()
         return ResponseEntity.ok(ServiceResponse("200",
                 "SUCCESS", records))
     }
+
+    // del schedule crud for delivery moment validation
+    @Operation(summary = OPENAPI_GET_DEF, description = OPENAPI_GET_DEF, tags = [API_TAG_NAME])
+    @ApiResponses(value = [
+        ApiResponse(responseCode = "200", description = DATA_FOUND, content = [
+            (Content(mediaType = MEDIA_TYPE, array = (
+                    ArraySchema(schema = Schema(implementation = BaseModel::class)))))]),
+        ApiResponse(responseCode = "400", description = BAD_REQUEST, content = [Content()]),
+        ApiResponse(responseCode = "404", description = NO_DATA_FOUND, content = [Content()])]
+    )
+    @RequestMapping(value = ["/deliveryscheduleformoment"], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
+    fun getdelscheduleformoment(@RequestParam (required = false) storeNumber:Long?,
+                             @RequestParam(required = false) deliveryStream:Int?,
+                             @RequestParam(required = false) startDate:String): ResponseEntity<ServiceResponse> {
+        logger.info("Get from del schedule for moment")
+        var records = mutableListOf<Any>()
+        records = service.getDeliveryScheduleForMoment(storeNumber,deliveryStream,startDate).toMutableList()
+        return ResponseEntity.ok(ServiceResponse("200",
+                "SUCCESS", records))
+    }
+
 
     //Delivery Stream all
     @Operation(summary = OPENAPI_GET_DEF, description = OPENAPI_GET_DEF, tags = [API_TAG_NAME])
@@ -216,77 +257,15 @@ class Controller(private val service: Service,
     @RequestMapping(value = ["/logisticChannel"], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
     fun getLogisticByQuery(@RequestParam (required = false) storeNumber:Long?,
                            @RequestParam(required = false) deliveryStream: Int?,
-                           @RequestParam(required = false) startDate:String,
-                           @RequestParam(required = false) endDate:String): ResponseEntity<ServiceResponse> {
+                           @RequestParam(required = false) startDate:String
+                          ): ResponseEntity<ServiceResponse> {
         logger.info("Get by query in logistic")
         var records = mutableListOf<LogisticChannel>()
-        records =  service.getLogisticChannelService(storeNumber,deliveryStream,startDate,endDate)
+        records =  service.getLogisticChannelService(storeNumber,deliveryStream,startDate)
         return ResponseEntity.ok(ServiceResponse("200",
                 "SUCCESS", records))
     }
-    /**
-     * This is a sample of the GET Endpoint
-     */
-//    @Operation(summary = OPENAPI_GET_BY_ID_DEF, description = OPENAPI_GET_BY_ID_DEF, tags = [API_TAG_NAME])
-//    @ApiResponses(value = [
-//        ApiResponse(responseCode = "200", description = DATA_FOUND, content = [Content(schema = Schema(implementation = ServiceResponse::class))]),
-//        ApiResponse(responseCode = "400", description = BAD_REQUEST, content = [Content()]),
-//        ApiResponse(responseCode = "404", description = NO_DATA_FOUND, content = [Content()])]
-//    )
-//   @RequestMapping(value = [GET_BY_ID_URI], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
-//    fun getById(
-//            @PathVariable id: String
-//    ): ResponseEntity<ServiceResponse> {
-//        logger.info("Get by id: ")
-//        return ResponseEntity.ok(ServiceResponse("200",
-//                "SUCCESS", service.getById(id).data))
-//    }
 
-    /**
-     * This is a sample of the POST Endpoint
-     */
-//    @Operation(summary = OPENAPI_POST_DEF, description = OPENAPI_POST_DEF, tags = [API_TAG_NAME])
-//    @ApiResponses(value = [
-//        ApiResponse(responseCode = "200", description = DATA_FOUND, content = [Content(schema = Schema(implementation = BaseModel::class))]),
-//        ApiResponse(responseCode = "400", description = BAD_REQUEST, content = [Content()]),
-//        ApiResponse(responseCode = "404", description = NO_DATA_FOUND, content = [Content()])]
-//    )
-//    @RequestMapping(value = [POST_PUT_DELETE_URI], method = [RequestMethod.POST], produces = [MediaType.APPLICATION_JSON_VALUE])
-//    fun post(@RequestBody model: Model): ResponseEntity<ServiceResponse> {
-//        service.save(model)
-//        return ResponseEntity.ok(ServiceResponse("200",
-//                "SUCCESS", "Data Successfully Inserted"))
-//    }
-
-
-
-//    @Operation(summary = OPENAPI_PUT_DEF, description = OPENAPI_PUT_DEF, tags = [API_TAG_NAME])
-//    @ApiResponses(value = [
-//        ApiResponse(responseCode = "200", description = DATA_FOUND, content = [Content(schema = Schema(implementation = BaseModel::class))]),
-//        ApiResponse(responseCode = "400", description = BAD_REQUEST, content = [Content()]),
-//        ApiResponse(responseCode = "404", description = NO_DATA_FOUND, content = [Content()])]
-//    )
-//    @RequestMapping(value = [POST_PUT_DELETE_URI], method = [RequestMethod.PUT], produces = [MediaType.APPLICATION_JSON_VALUE])
-//    fun put(@RequestBody model: Model): ResponseEntity<ServiceResponse> {
-//        service.save(model)
-//        return ResponseEntity.ok(ServiceResponse("200",
-//                "SUCCESS", "Data Successfully Updated"))
-//    }
-//
-//
-//
-//    @Operation(summary = OPENAPI_DELETE_BY_ID_DEF, description = OPENAPI_DELETE_BY_ID_DEF, tags = [API_TAG_NAME])
-//    @ApiResponses(value = [
-//        ApiResponse(responseCode = "200", description = DATA_FOUND, content = [Content(schema = Schema(implementation = BaseModel::class))]),
-//        ApiResponse(responseCode = "400", description = BAD_REQUEST, content = [Content()]),
-//        ApiResponse(responseCode = "404", description = NO_DATA_FOUND, content = [Content()])]
-//    )
-//    @RequestMapping(value = [POST_PUT_DELETE_URI], method = [RequestMethod.DELETE], produces = [MediaType.APPLICATION_JSON_VALUE])
-//    fun delete(@PathVariable id: String): ResponseEntity<ServiceResponse> {
-//        service.delete(id)
-//        return ResponseEntity.ok(ServiceResponse("200",
-//                "SUCCESS", "Data Successfully Deleted"))
-//    }
 }
 
 

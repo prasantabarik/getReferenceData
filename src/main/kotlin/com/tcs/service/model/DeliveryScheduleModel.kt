@@ -14,13 +14,8 @@ data class DeliveryScheduleModel(
         var deliverySchemaType: Int?,
         var startDate: String?,
         var endDate: String?,
-        var notes: String?,
-        var timeTable: List<TimeTableModel>?,
-        var createdBy : String?,
-        var creationDateTime: String?,
-        var updatedBy : String?,
-        var updateDateTime : String?
-
+        var notes: String?
+  //      var timeTable: List<TimeTableModel>?
 
 
 ) {

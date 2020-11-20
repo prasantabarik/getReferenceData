@@ -43,13 +43,13 @@ class Service(private val deliverer: DelivererRepository,
         return models
     }
 
-    fun getDeliveryChannelService(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String): MutableList<DeliveryChannel> {
+    fun getDeliveryChannelService(storeNumber:Long?,deliveryStream:Int?,startDate:String): MutableList<DeliveryChannel> {
         //The below lines of code is for POC on Mongo Template
         //repository.getAllByDesc("Sample").forEach{i -> println(i.modId)}
         var models = mutableListOf<Model>()
 
 
-            var result = customQuery.getDeliveryChannel(storeNumber, deliveryStream, startDate, endDate)
+            var result = customQuery.getDeliveryChannel(storeNumber, deliveryStream, startDate)
                     ?: throw DataNotFoundException(ExceptionMessage.NO_DATA_FOUND)
             //       result.forEach { entity -> models.add(Model(data = entity)) }
             return result
@@ -57,11 +57,11 @@ class Service(private val deliverer: DelivererRepository,
 
     }
 
-  fun  getLogisticChannelService(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String) :
+  fun  getLogisticChannelService(storeNumber:Long?,deliveryStream:Int?,startDate:String) :
           MutableList<LogisticChannel> {
 
       var models = mutableListOf<Model>()
-      var result = customQuery.getLogisticChannelRepo(storeNumber, deliveryStream, startDate, endDate)
+      var result = customQuery.getLogisticChannelRepo(storeNumber, deliveryStream, startDate)
 
       return result
   }
@@ -72,6 +72,19 @@ class Service(private val deliverer: DelivererRepository,
         var result = deliveryschedule.findAll()
         return result.toMutableList()
 
+    }
+
+    fun getDelivererAllService() : MutableList<Deliverer> {
+        var models = mutableListOf<Model>()
+        var result = deliverer.findAll()
+        return result.toMutableList()
+    }
+
+    fun getDeliveryScheduleForMoment(storeNumber:Long?,deliveryStream:Int?,startDate:String)
+            : MutableList<DeliveryScheduleModel> {
+        var models = mutableListOf<Model>()
+        var result = customQuery.getDeliveryScheduleForMomentCustom(storeNumber,deliveryStream,startDate) ?: throw DataNotFoundException(ExceptionMessage.NO_DATA_FOUND)
+        return result
     }
 
 }
