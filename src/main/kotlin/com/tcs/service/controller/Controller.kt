@@ -159,7 +159,7 @@ class Controller(private val service: Service,
     fun getdelschedulesorted(@RequestParam (required = false) storeNumber:Long?,
                              @RequestParam(required = false) deliveryStream:Int?,
                              @RequestParam(required = false) startDate:String,
-                             @RequestParam(required = false) endDate:String): ResponseEntity<ServiceResponse> {
+                             @RequestParam(required = false) endDate:String?): ResponseEntity<ServiceResponse> {
         logger.info("Get from del schedule")
         var records = mutableListOf<Any>()
         records = service.getDeliveryScheduleSorted(storeNumber,deliveryStream,startDate,endDate).toMutableList()

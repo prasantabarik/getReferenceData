@@ -18,7 +18,7 @@ class CustomRepositoryImpl(private val mongoTemplate: MongoTemplate) : CustomRep
 
 
 
-fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String)
+fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String?)
         : MutableList<DeliveryScheduleModel> {
         var query = Query()
 
@@ -36,7 +36,7 @@ fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:St
     criteria.andOperator(
             Criteria.where("storeNumber").isEqualTo(storeNumber),
             Criteria.where("deliveryStreamNumber").isEqualTo(deliveryStream)
-            , Criteria.where("startDate").lte(endDate).orOperator(
+            , Criteria.where("startDate").lte(endDate.toString()).orOperator(
               Criteria.where("endDate").gte(startDate),
                 Criteria.where("endDate").`is`(null))
 

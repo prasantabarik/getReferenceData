@@ -26,7 +26,7 @@ class Service(private val deliverer: DelivererRepository,
 
         return result
     }
-    fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String)
+    fun getDeliveryScheduleSorted(storeNumber:Long?,deliveryStream:Int?,startDate:String,endDate:String?)
             : MutableList<DeliveryScheduleModel> {
         var models = mutableListOf<Model>()
         var result = customQuery.getDeliveryScheduleSorted(storeNumber,deliveryStream,startDate,endDate) ?: throw DataNotFoundException(ExceptionMessage.NO_DATA_FOUND)
