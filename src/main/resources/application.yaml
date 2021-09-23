@@ -23,8 +23,8 @@ management:
         include: "*"
 ##OpenAPI To Enable
 springdoc:
-  swagger-ui.path: "/servicetemplate/api/v1/service-template/swagger-ui-custom.html"
-  api-docs.path: "/servicetemplate/api/v1/store-cluster-service/api-docs"
+  swagger-ui.path: "/api/v1/getReferenceData/swagger/swagger-ui-custom.html"
+  api-docs.path: "/api/vi/getReferenceData/swagger/api-docs"
 ##Azure Cosmos Credentials and App Insights Key
 azure:
   application-insights:
